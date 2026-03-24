@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;700&family=Reenie+Beanie&display=swap');
+
+@theme {
+  --color-viking-dark: #0B0E14;
+  --color-viking-slate: #161B22;
+  --color-viking-gold: #C5A059;
+  --color-viking-blue: #5E81AC;
+  --color-viking-silver: #D8DEE9;
+  
+  --font-ancient: "Cinzel", serif;
+  --font-modern: "Inter", sans-serif;
+  --font-signature: "Reenie Beanie", cursive;
+}
