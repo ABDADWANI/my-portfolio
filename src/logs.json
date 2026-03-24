@@ -1,0 +1,20 @@
+[
+  {
+    "day": "Day 1",
+    "date": "2026-03-24",
+    "title": "System Breach Analysis",
+    "summary": "Investigation into unauthorized access activity, reconstructed timelines, and suspicious authentication patterns."
+  },
+  {
+    "day": "Day 2",
+    "date": "2026-03-25",
+    "title": "Malware Reverse Engineering",
+    "summary": "Static and behavioral analysis of a suspicious payload discovered during incident triage."
+  },
+  {
+    "day": "Day 3",
+    "date": "2026-03-26",
+    "title": "Memory Artifact Recovery",
+    "summary": "Recovered volatile indicators from process memory to identify persistence and execution traces."
+  }
+]

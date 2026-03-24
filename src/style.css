@@ -1,14 +1,35 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;700&family=Reenie+Beanie&display=swap');
 
-@theme {
-  --color-viking-dark: #0B0E14;
-  --color-viking-slate: #161B22;
-  --color-viking-gold: #C5A059;
-  --color-viking-blue: #5E81AC;
-  --color-viking-silver: #D8DEE9;
-  
-  --font-ancient: "Cinzel", serif;
-  --font-modern: "Inter", sans-serif;
-  --font-signature: "Reenie Beanie", cursive;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0f;
+  color: #e4e4e7;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.cyber-grid {
+  background-image:
+    linear-gradient(rgba(0, 255, 229, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 229, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.glow {
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.15), 0 0 30px rgba(34, 211, 238, 0.08);
+}
+
+.glow-text {
+  text-shadow: 0 0 12px rgba(34, 211, 238, 0.35);
+}
+
+.card-blur {
+  background: rgba(10, 10, 15, 0.72);
+  backdrop-filter: blur(12px);
+}
+
+.border-soft {
+  border-color: rgba(255, 255, 255, 0.08);
 }
