@@ -1,0 +1,23 @@
+[
+  {
+    "type": "Writeup",
+    "title": "Published a new Medium article on PowerShell investigations",
+    "description": "Shared a practical investigation workflow for suspicious PowerShell execution and defensive analysis.",
+    "date": "Aug 2025",
+    "link": "./writeups.html"
+  },
+  {
+    "type": "Project",
+    "title": "Updated YARAAssist with improved rule generation",
+    "description": "Refined the project structure and improved usability for faster custom YARA rule creation.",
+    "date": "Jul 2025",
+    "link": "#projects"
+  },
+  {
+    "type": "Achievement",
+    "title": "Completed additional DFIR practice labs",
+    "description": "Expanded hands-on experience in memory analysis, evidence triage, and forensic case reconstruction.",
+    "date": "Jul 2025",
+    "link": "#certifications"
+  }
+]

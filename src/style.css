@@ -18,7 +18,9 @@ body {
 }
 
 .glow {
-  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.15), 0 0 30px rgba(34, 211, 238, 0.08);
+  box-shadow:
+    0 0 0 1px rgba(34, 211, 238, 0.15),
+    0 0 30px rgba(34, 211, 238, 0.08);
 }
 
 .glow-text {
@@ -28,8 +30,140 @@ body {
 .card-blur {
   background: rgba(10, 10, 15, 0.72);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .border-soft {
   border-color: rgba(255, 255, 255, 0.08);
+}
+
+.tilt-card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease,
+    background 0.35s ease;
+  will-change: transform;
+  overflow: hidden;
+}
+
+.tilt-card:hover {
+  transform: perspective(1200px) rotateX(5deg) rotateY(-5deg) translateY(-8px);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(34, 211, 238, 0.16),
+    0 0 36px rgba(34, 211, 238, 0.10);
+}
+
+.tilt-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 211, 238, 0.12),
+    rgba(168, 85, 247, 0.08),
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.tilt-card:hover::before {
+  opacity: 1;
+}
+
+.depth-layer {
+  transform: translateZ(28px);
+  position: relative;
+  z-index: 1;
+}
+
+.hero-3d-panel {
+  position: relative;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.35),
+    0 0 60px rgba(34, 211, 238, 0.08);
+  transform: perspective(1400px) rotateY(-8deg) rotateX(5deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-3d-panel:hover {
+  transform: perspective(1400px) rotateY(-4deg) rotateX(2deg) translateY(-6px);
+  box-shadow:
+    0 34px 70px rgba(0, 0, 0, 0.42),
+    0 0 70px rgba(34, 211, 238, 0.12);
+}
+
+.hero-3d-panel::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 211, 238, 0.18),
+    transparent 35%,
+    rgba(168, 85, 247, 0.14)
+  );
+  z-index: -1;
+  filter: blur(18px);
+  opacity: 0.9;
+}
+
+.orb-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.orb-cyan {
+  background: rgba(34, 211, 238, 0.25);
+}
+
+.orb-purple {
+  background: rgba(168, 85, 247, 0.20);
+}
+
+.section-panel {
+  position: relative;
+}
+
+.section-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.05);
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .hero-3d-panel {
+    transform: none;
+  }
+
+  .hero-3d-panel:hover {
+    transform: translateY(-4px);
+  }
+
+  .tilt-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .depth-layer {
+    transform: none;
+  }
 }

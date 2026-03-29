@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Writeup — SSTI1",
+    "description": "I made a cool website where you can announce whatever you want! Try it out!",
+    "category": "Web Exploitation",
+    "date": "Mar 2025",
+    "url": "https://medium.com/@abdelrahmanaladwani03/writeup-ssti1-server-side-template-injection-3cccb280e00a"
+  },
+   {
+    "title": "Writeup — 3v@l",
+    "description": "ABC Bank's website includes a loan calculator that evaluates user input using Python’s eval() function. This function is known for its security risks, as it can lead to Remote Code Execution (RCE) if not properly sanitized. The objective of this challenge is to exploit this vulnerability and read the flag stored in /flag.txt.",
+    "category": "Web Exploitation",
+    "date": "Mar 2025",
+    "url": "https://github.com/ABDADWANI/PicoCTF-2025/blob/main/Web/3v%40l/writeup.md"
+  },
+   {
+    "title": "Writeup — Apriti sesamo",
+    "description": "The Apriti Sesamo challenge presented an interesting vulnerability related to SHA-1 collisions, a well-known weakness in cryptographic hashing. This write-up will walk through the process of analyzing the challenge, understanding the security flaw, and successfully exploiting it to retrieve the flag.",
+    "category": "Web Exploitation",
+    "date": "Mar 2025",
+    "url": "https://github.com/ABDADWANI/PicoCTF-2025/blob/main/Web/Apriti%20sesamo/writeup.md"
+  },
+  {
+    "title": "Writeup — SSTI2",
+    "description": "The challenge presents a web application where users can post announcements. According to the description, the developer attempted to secure the application by sanitizing input to remove potentially dangerous characters. Despite this, our goal is to identify a way to bypass the filtering mechanisms and exploit Server-Side Template Injection (SSTI) to execute commands on the server and retrieve the flag.",
+    "category": "Web Exploitation",
+    "date": "Mar 2025",
+    "url": "https://github.com/ABDADWANI/PicoCTF-2025/blob/main/Web/SSTI2/writeup.md"
+  },
+  {
+    "title": "Writeup — WebSockFish",
+    "description": "The challenge presents a web-based chess game where the player competes against the Stockfish chess engine. Given Stockfish's strength as a chess engine, winning fairly is nearly impossible. Our objective is to analyze the game's mechanics and find a way to manipulate the system to force a victory.",
+    "category": "Web Exploitation",
+    "date": "Mar 2025",
+    "url": "https://github.com/ABDADWANI/PicoCTF-2025/blob/main/Web/WebSockFish/writeup.md"
+  },
+  {
+    "title": "Writeup — n0s4n1ty_1",
+    "description": "In this challenge, a developer has implemented a profile picture upload feature on a website. However, the file upload mechanism is not properly secured, allowing for arbitrary file uploads. This presents an opportunity to upload a malicious PHP script, execute system commands, and ultimately retrieve the flag located in the /root directory.",
+    "category": "Web Exploitation",
+    "date": "Mar 2025",
+    "url": "https://github.com/ABDADWANI/PicoCTF-2025/blob/main/Web/n0s4n1ty_1/writeup.md"
+  }
+]

@@ -3,17 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Case Logs | ABDADWANI</title>
+    <title>Writeups | ABDADWANI</title>
     <meta
       name="description"
-      content="Case logs and technical notes by ABDADWANI covering cybersecurity investigations and defensive analysis."
+      content="Cybersecurity writeups by ABDADWANI covering digital forensics, threat hunting, and defensive analysis."
     />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700;800&display=swap"
+      rel="preconnect"
+      href="[fonts.googleapis.com](https://fonts.googleapis.com)"
+    />
+    <link
+      rel="preconnect"
+      href="[fonts.gstatic.com](https://fonts.gstatic.com)"
+      crossorigin
+    />
+    <link
+      href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700;800&display=swap)"
       rel="stylesheet"
     />
-    <script type="module" src="./src/blog.js"></script>
+    <script type="module" src="./src/writeups.js"></script>
   </head>
 
   <body class="bg-[#0a0a0f] text-zinc-200 selection:bg-cyan-400 selection:text-black">
@@ -28,10 +37,10 @@
 
         <div class="flex items-center gap-3">
           <a
-            href="./writeups.html"
+            href="./blog.html"
             class="rounded-full border border-white/10 px-4 py-2 text-sm text-zinc-300 transition hover:border-cyan-300 hover:text-cyan-300"
           >
-            Writeups
+            Case Logs
           </a>
           <a
             href="./index.html"
@@ -45,16 +54,16 @@
 
     <main class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
       <div class="mb-12 max-w-3xl">
-        <p class="mb-3 text-sm uppercase tracking-[0.35em] text-cyan-400">Case Logs</p>
+        <p class="mb-3 text-sm uppercase tracking-[0.35em] text-cyan-400">Writeups</p>
         <h1 class="font-['Space_Grotesk'] text-4xl font-bold text-white sm:text-5xl">
-          Field reports, investigations, and technical notes.
+          Research notes, investigations, and technical walkthroughs.
         </h1>
         <p class="mt-5 leading-8 text-zinc-400">
-          A collection of digital-forensics observations, security investigations, and defensive analysis logs.
+          A collection of writeups hosted on Medium and GitHub.
         </p>
       </div>
 
-      <section id="blog-container" class="grid gap-6 md:grid-cols-2 xl:grid-cols-3"></section>
+      <section id="writeups-container" class="grid gap-6 md:grid-cols-2 xl:grid-cols-3"></section>
     </main>
   </body>
 </html>
